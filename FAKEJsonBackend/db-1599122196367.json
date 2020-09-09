@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "rashmi",
+      "lastName": "pawaskar",
+      "email": "rashmi.vernekar@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "anushka",
+      "lastName": "pawaskar",
+      "email": "anu@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstName": "parth",
+      "lastName": "pawaskar",
+      "email": "parth@gmail.com"
+    }
+  ]
+}

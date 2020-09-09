@@ -1,0 +1,32 @@
+<div class="well">
+    <form class="form-inline">
+        <div class="from-group">
+            <input placeholder="Event Name" class="form-control" #eventname />
+        </div>
+        <div class="from-group">
+            <input placeholder="Description" class="form-control" #description />
+        </div>
+        <div class="from-group">
+            <input placeholder="Speaker" class="form-control" #speaker />
+        </div>
+        <button (click)="addEvent(eventname.value,description.value,speaker.value )" type="button">Add New Event</button>
+    </form>
+</div>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Speaker</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let empl of events">
+            <td>{{empl.id}}</td>
+            <td>{{empl.name}}</td>
+            <td>{{empl.description}}</td>
+            <td>{{empl.speaker}}</td>
+            <th> <button (click)="deleteEvent(e)" class="btn btn-danger">X</button> </th>
+        </tr>
+    </tbody>

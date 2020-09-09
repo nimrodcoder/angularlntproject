@@ -1,0 +1,15 @@
+<!-- Interpolation Example: -->
+<div> Item Count : ({{ itemCount }})</div>
+<!-- Property Binding  : -->
+<input type="submit" class="btn btn-success"[value] ="btnText">
+<input type="submit" class="btn btn-primary" value="{{ btnText }}">
+<!-- One way data binding  :  -->
+<input name="message" placeholder="Message.." [ngModel]="message">
+<span>{{ message }}</span><br>
+
+<!-- Two way data binding  :  -->
+<input name="message" placeholder="Message.." [(ngModel)]="message">
+<span>{{ message }}</span><br>
+
+<!--Event Binding Example -->
+<input type="submit" class="btn" value="{{ btnText }}" (click)="addItem()">
